@@ -1,0 +1,27 @@
+//медиа-выражение
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@mixin min-screen($res) {
+  @media screen and (min-width: $res) {
+    @content;
+  }
+}
+
+// Работает только при наведении мышки
+@mixin mouse-device {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
+
+// Работает только на касание сенсорных экранах
+@mixin touch-device {
+  @media (hover: none) and (pointer: coarse) {
+    @content;
+  }
+}
+

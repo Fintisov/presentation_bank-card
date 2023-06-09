@@ -1,0 +1,43 @@
+// ------------------------------------------------
+// ------------ COLOR ------------
+$ui-color-black: #000000;
+$ui-color-white: #ffffff;
+
+
+// ------------------------------------------------
+// ------------ FONTS ------------
+$ui-font-poppins: "Poppins", sans-serif;
+
+
+// ------------------------------------------------
+// ------------ Z-Index ------------
+$ui-index-1: 1; // Для наползающих элементов в блоке
+$ui-index-2: 2; // Для наползающих элементов в блоке
+$ui-index-3: 3; // Для затемняющих или блюр масок
+$ui-index-4: 4; // Для сайдбаров
+$ui-index-5: 5; // Для модальных окон
+$ui-index-6: 6; // Для элементов перекрывающих все
+
+
+// ------------------------------------------------
+// ------------ Breakpoints ------------
+$ui-breakpoints-xl: "1300px";
+$ui-breakpoints-xl--min: "1301px";
+
+$ui-breakpoints-lg: "992px";
+$ui-breakpoints-lg--min: "993px";
+
+$ui-breakpoints-md: "768px";
+$ui-breakpoints-md--min: "769px";
+
+$ui-breakpoints-sm: "576px";
+$ui-breakpoints-sm--min: "577px";
+
+
+// use this: @media #{$ui-mouse-device} {}
+$ui-mouse-device: "(hover: hover) and (pointer: fine)"; // Работает только при наведении мышки
+$ui-touch-device: "(hover: none) and (pointer: coarse)"; // Работает только на сенсорных экранах
+
+// ------------------------------------------------
+// ------------ parameters styles ------------
+$ui-transition-default: 0.2s;
