@@ -2,11 +2,14 @@
 // ------------ COLOR ------------
 $ui-color-black: #000000;
 $ui-color-white: #ffffff;
+$ui-color-purple: #B01DDC;
+$ui-color-purple-dark: #9019b0;
 
 
 // ------------------------------------------------
 // ------------ FONTS ------------
-$ui-font-poppins: "Poppins", sans-serif;
+$ui-font-ubuntu: "Ubuntu", sans-serif;
+$ui-font-raleway: "Raleway", sans-serif;
 
 
 // ------------------------------------------------
@@ -21,8 +24,11 @@ $ui-index-6: 6; // Для элементов перекрывающих все
 
 // ------------------------------------------------
 // ------------ Breakpoints ------------
-$ui-breakpoints-xl: "1300px";
-$ui-breakpoints-xl--min: "1301px";
+$ui-breakpoints-xxl: "1400px";
+$ui-breakpoints-xl--min: "1401px";
+
+$ui-breakpoints-xl: "1200px";
+$ui-breakpoints-xl--min: "1201px";
 
 $ui-breakpoints-lg: "992px";
 $ui-breakpoints-lg--min: "993px";
