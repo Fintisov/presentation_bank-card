@@ -1,4 +1,39 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/ubuntu-light-webfont.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/ubuntu-regular-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/ubuntu-bold-webfont.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway-regular-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway-bold-webfont.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 *,
 *::before,
 *::after {
@@ -14,7 +49,9 @@ html {
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
+  font-family: "Ubuntu", sans-serif;
   line-height: 1.25;
+  color: #ffffff;
 }
 
 ul, ol {
@@ -42,12 +79,6 @@ a {
   color: inherit;
   font-family: inherit;
 }
-@media (hover: hover) and (pointer: fine) {
-  a:hover {
-    color: inherit;
-  }
-}
-
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -75,6 +106,10 @@ h6, .h6 {
 }
 
 p {
+  font-family: "Ubuntu", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
   margin: 0;
 }
 strong, b .strong {
@@ -335,4 +370,71 @@ ins, u, .text-underline {
   position: absolute;
   top: 5px;
   right: 10px;
+}
+
+.button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 168px;
+  min-height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #ffffff;
+  border-radius: 25px;
+  background-color: #B01DDC;
+  -webkit-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background-color: #9019b0;
+  }
+}
+
+.header {
+  padding: 50px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__logo {
+  font-weight: 700;
+  font-size: 26px;
+}
+.header__logo span {
+  font-weight: 300;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+@media (hover: hover) and (pointer: fine) {
+  .header__logo:hover span {
+    color: #B01DDC;
+  }
 }
