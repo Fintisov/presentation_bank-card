@@ -7,7 +7,6 @@
   width: 100%;
 }
 
-
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -30,8 +29,164 @@
   &:hover {
     @include mouse-device {
       span {
-          color: $ui-color-purple;
+        color: $ui-color-purple;
       }
     }
+  }
+}
+
+.main-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 800px;
+  height: 100vh;
+
+  background-image: url("../images/ukraine.svg");
+  background-position: center center;
+  background-size: auto 800px;
+  background-repeat: no-repeat;
+
+  background-color: $ui-color-grey;
+}
+
+.main-banner__content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px 92px;
+}
+
+.main-banner__content {
+  max-width: 455px;
+
+  .title {
+    margin-bottom: 20px;
+
+    strong {
+      color: $ui-color-purple;
+    }
+  }
+
+  .text {
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+
+  .link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    font-weight: 700;
+    font-size: 16px;
+    color: $ui-color-purple;
+    transition: color $ui-transition-default;
+
+    &:hover {
+        @include mouse-device {
+            color: $ui-color-purple-dark;
+
+          .link__icon-wrapper {
+            background-color: $ui-color-purple-dark;
+          }
+        }
+    }
+
+    .link__icon-wrapper {
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+      background-color: $ui-color-purple;
+      transition: background-color $ui-transition-default;
+    }
+
+    .link__icon {
+      width: 6px;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}
+
+.bank-card {
+  position: relative;
+
+  flex: 0 0 480px;
+  width: 480px;
+  height: 310px;
+  margin: 0 0 20px 20px;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+
+    display: block;
+    width: 100%;
+    height:100%;
+    background-image: url("../images/ukraine.svg");
+    background-position: center center;
+    background-size: calc(100% - 50px) calc(100% - 50px);
+    background-repeat: no-repeat;
+
+    opacity: .3;
+  }
+}
+
+.bank-card__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  // .bank-card__item-content
+  &-content {
+    z-index: $ui-index-2;
+  }
+
+  &.l_main {
+    z-index: $ui-index-1;
+  }
+
+  &.l2_main {
+    top: 10px;
+    left: -10px;
+  }
+
+  &.l3_main {
+    top: 20px;
+    left: -20px;
+  }
+
+  &.logo_w {
+    top: 40px;
+    right: 45px;
+    left: auto;
+
+    width: 120px;
+  }
+
+  &.chip {
+    width: 70px;
+    top: 77px;
+    left: 55px;
+  }
+
+  &.number {
+    top: 160px;
+    left: 50px;
+
+    width: 300px;
+  }
+
+  &.date {
+    width: 120px;
+    top: 194px;
+    left: 126px;
   }
 }

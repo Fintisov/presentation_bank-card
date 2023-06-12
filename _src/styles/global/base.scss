@@ -78,7 +78,8 @@ h6, .h6 {
 }
 
 h1, .h1 {
-  //font-size: 42px;
+  font-size: 32px;
+  font-weight: 700;
 
   @media screen and (max-width: $ui-breakpoints-md) {
   }

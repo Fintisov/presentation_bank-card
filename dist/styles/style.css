@@ -105,6 +105,10 @@ h6, .h6 {
   margin: 0;
 }
 
+h1, .h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
 p {
   font-family: "Ubuntu", sans-serif;
   color: #ffffff;
@@ -437,4 +441,162 @@ ins, u, .text-underline {
   .header__logo:hover span {
     color: #B01DDC;
   }
+}
+
+.main-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 800px;
+  height: 100vh;
+  background-image: url("../images/ukraine.svg");
+  background-position: center center;
+  background-size: auto 800px;
+  background-repeat: no-repeat;
+  background-color: #1C1C1C;
+}
+
+.main-banner__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px 92px;
+}
+
+.main-banner__content {
+  max-width: 455px;
+}
+.main-banner__content .title {
+  margin-bottom: 20px;
+}
+.main-banner__content .title strong {
+  color: #B01DDC;
+}
+.main-banner__content .text {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+.main-banner__content .link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #B01DDC;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+@media (hover: hover) and (pointer: fine) {
+  .main-banner__content .link:hover {
+    color: #9019b0;
+  }
+  .main-banner__content .link:hover .link__icon-wrapper {
+    background-color: #9019b0;
+  }
+}
+.main-banner__content .link .link__icon-wrapper {
+  width: 36px;
+  height: 36px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background-color: #B01DDC;
+  -webkit-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.main-banner__content .link .link__icon {
+  width: 6px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.bank-card {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 480px;
+          flex: 0 0 480px;
+  width: 480px;
+  height: 310px;
+  margin: 0 0 20px 20px;
+}
+.bank-card:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/ukraine.svg");
+  background-position: center center;
+  background-size: calc(100% - 50px) calc(100% - 50px);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.bank-card__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bank-card__item-content {
+  z-index: 2;
+}
+.bank-card__item.l_main {
+  z-index: 1;
+}
+.bank-card__item.l2_main {
+  top: 10px;
+  left: -10px;
+}
+.bank-card__item.l3_main {
+  top: 20px;
+  left: -20px;
+}
+.bank-card__item.logo_w {
+  top: 40px;
+  right: 45px;
+  left: auto;
+  width: 120px;
+}
+.bank-card__item.chip {
+  width: 70px;
+  top: 77px;
+  left: 55px;
+}
+.bank-card__item.number {
+  top: 160px;
+  left: 50px;
+  width: 300px;
+}
+.bank-card__item.date {
+  width: 120px;
+  top: 194px;
+  left: 126px;
 }
